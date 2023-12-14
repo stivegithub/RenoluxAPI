@@ -19,7 +19,7 @@ const port = process.env.PORT || 2003;
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:3000", // Remplacez par votre domaine
+  origin: "https://renolux.netlify.app", // Remplacez par votre domaine
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true,
   optionsSuccessStatus: 204,
