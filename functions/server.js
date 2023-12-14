@@ -9,8 +9,9 @@ dotenv.config();
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "digitalwaycameroun@gmail.com",
-    pass: "enozqadteybdydxe",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+
   },
 });
 
@@ -63,3 +64,5 @@ app.post("/rendez-vous", async (req, res) => {
 app.listen(port, () => {
   console.log(`Le serveur a démarré sur le port ${port}`);
 });
+
+module.exports = app;

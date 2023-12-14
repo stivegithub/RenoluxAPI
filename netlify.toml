@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"  # Si vous avez des étapes de build
+  functions = "functions"
+
+[dev]
+  framework = "# Remplacez_par_le_nom_de_votre_framework"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
